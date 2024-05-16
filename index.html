@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMS Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+      background-image: url('login.jpg');
+      background-size: cover;
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin: auto; /* Center horizontally */
+      margin-top: 20vh; /* Adjust the top margin to center vertically */
+    }
+
+    .login-header {
+      color: black;
+      margin-top: 0;
+    }
+    
+    /* Styling for the black buttons */
+    .login-container ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .login-container ul li {
+      margin-bottom: 10px;
+    }
+
+    .login-container ul li a {
+      display: block;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+  .footer {
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+      margin-top: auto; /* Push footer to bottom */
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1 class="login-header">School Management System</h1>
+    <!-- Three buttons to navigate to different pages -->
+    <ul>
+      <li><a href="student_login.html">Student</a></li>
+      <li><a href="parent_login.html">Parent</a></li>
+      <li><a href="teacher_login.html">Teacher</a></li>
+    </ul>
+    <br>
+    <p>Don't have any account? <a href="registration.html">Click here</a></p>
+  </div>
+  <div class="footer">
+    <p>&copy; Created by Shipon, Jubaer & Pallab</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+      background-image: url('login.jpg');
+      background-size: cover;
+      filter: none; /* Adding blur effect to the background image */
+    }
+
+    .registration-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin: auto; /* Center horizontally */
+      margin-top: 10vh; /* Adjust the top margin to center vertically */
+      width: 300px; /* Set width of the container */
+      filter: none; /* Remove blur effect from the form container */
+    }
+
+    .registration-header {
+      color: black;
+      text-transform: uppercase; /* Convert text to uppercase */
+      margin-top: auto;
+      margin-left: 500px;
+      filter: none; /* Remove blur effect from the header */
+    }
+
+    .registration-container input[type="text"],
+    .registration-container input[type="password"] {
+      width: calc(100% - 22px); /* Take full width minus padding and borders */
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .registration-container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+
+  .footer {
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+      margin-top: auto; /* Push footer to bottom */
+      filter: none; /* Remove blur effect from the footer */
+    }
+  </style>
+</head>
+<body>
+  <h1 class="registration-header">REGISTRATION</h1>
+  <div class="registration-container">
+    <form action="">
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+      <input type="text" placeholder="ID">
+      <input type="text" placeholder="Class">
+      <input type="text" placeholder="Address">
+      <input type="text" placeholder="Contact Number">
+      <input type="text" placeholder="Date of birth">
+      <input type="password" placeholder="Password">
+      <input type="submit" value="Register">
+
+    </form>
+  </div>
+  <div class="footer">
+    <p>&copy; Created by Shipon, Jubaer & Pallab</p>
+  </div>
+</body>
+</html>

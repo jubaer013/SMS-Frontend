@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('teacher.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+
+    .blurry-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: blur(5px); /* Adding blur effect */
+    }
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .home-button:hover {
+      background-color: #333;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1; /* Ensure content is on top of blurred background */
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      width: 80%;
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .attendance-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .attendance-table th,
+    .attendance-table td {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .save-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="blurry-bg"></div>
+  <div class="content">
+    <h1>Attendance Page</h1>
+    <table class="attendance-table">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Attendance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Student 1</td>
+          <td>
+            <select>
+              <option value="present">Present</option>
+              <option value="absent">Absent</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Student 2</td>
+          <td>
+            <select>
+              <option value="present">Present</option>
+              <option value="absent">Absent</option>
+            </select>
+          </td>
+        </tr>
+        <!-- Add more rows for other students -->
+      </tbody>
+    </table>
+    <button class="save-button">Save</button>
+    <a href="teacher.html" class="home-button">Home</a>
+  </div>
+  <div class="footer">
+    <p>&copy; Created by Jubaer, Shipon & Pallab</p>
+  </div>
+</body>
+</html>
